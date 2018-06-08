@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.mark.iotexperiment.MainActivity">
+
+    <ListView
+        android:id="@+id/show"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ok"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"></ListView>
+
+    <!--<EditText-->
+        <!--android:id="@+id/title"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_alignParentTop="true"-->
+        <!--android:layout_alignParentLeft="true"-->
+        <!--android:layout_alignParentStart="true"-->
+        <!--android:layout_marginTop="48dp"-->
+        <!--android:layout_toStartOf="@+id/showtemperature"-->
+        <!--android:layout_alignRight="@+id/test"-->
+        <!--android:layout_alignEnd="@+id/test" />-->
+
+    <Button
+        android:id="@+id/ok"
+        android:text="插入数据库"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="183dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:id="@+id/backtomain"
+        android:text="返回主函数"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/testbutton"
+        android:layout_toRightOf="@+id/testbutton"
+        android:layout_toEndOf="@+id/testbutton" />
+
+
+    <Button
+        android:id="@+id/showbutton"
+        android:text="显示"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/ok"
+        android:layout_toRightOf="@+id/ok" />
+
+    <Button
+        android:id="@+id/showtime"
+        android:text="时间"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/showtemperature"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignLeft="@+id/selectbutton"
+        android:layout_alignStart="@+id/selectbutton" />
+
+    <Button
+        android:id="@+id/showtemperature"
+        android:text="温度"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/show"
+        android:layout_toRightOf="@+id/showbutton" />
+    <Button
+        android:id="@+id/selectbutton"
+        android:text="查询"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/backtomain"
+        android:layout_toRightOf="@+id/backtomain"
+        android:layout_toEndOf="@+id/backtomain" />
+
+    <!--<EditText-->
+        <!--android:id="@+id/content"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_marginTop="30dp"-->
+        <!--android:layout_below="@+id/title"-->
+        <!--android:layout_alignParentLeft="true"-->
+        <!--android:layout_alignParentStart="true"-->
+        <!--android:layout_alignRight="@+id/title"-->
+        <!--android:layout_alignEnd="@+id/title" />-->
+
+    <Button
+        android:id="@+id/testbutton"
+        android:text="显示开始年份和结束年年份"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/showbutton"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <Spinner
+        android:id="@+id/spinner"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/test"
+        android:layout_toRightOf="@+id/test"
+        android:layout_toLeftOf="@+id/test2"
+        android:layout_toStartOf="@+id/test2"></Spinner>
+
+    <TextView
+        android:id="@+id/test"
+        android:text="测试test"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/test2"
+        android:text="测试test2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignRight="@+id/showtemperature"
+        android:layout_alignEnd="@+id/showtemperature" />
+
+
+</RelativeLayout>
